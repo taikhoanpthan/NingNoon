@@ -19,6 +19,7 @@
   height: 35vh;
   object-fit: contain;
   padding: 10px;
+  max-height: 500px;
 }
 .food-item-info {
   padding: 20px;
