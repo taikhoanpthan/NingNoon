@@ -32,6 +32,8 @@
 }
 .navbar .navbar-right .naver-search-icon {
   position: relative;
+  font-size: 24px;
+  color: #7b83a1;
 }
 .navbar .navbar-right .naver-search-icon .dot {
   position: absolute;

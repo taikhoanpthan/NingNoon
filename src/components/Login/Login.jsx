@@ -45,7 +45,7 @@ const Login = ({ setShowLogin }) => {
     <div className="login-popup">
       <form onSubmit={onLogin} className="login-popup-container">
         <div className="login-popup-title">
-          <h2>{currState === "Login" ? "Login" : "Sign Up"}</h2>
+          <h2>{currState === "Login" ? "Đăng nhập" : "Đăng kí"}</h2>
           <img
             onClick={() => setShowLogin(false)}
             src={assets.cross_icon}
@@ -59,7 +59,7 @@ const Login = ({ setShowLogin }) => {
               onChange={onChangeHandler}
               value={data.name}
               type="text"
-              placeholder="Your name"
+              placeholder="Nhập tên..."
               required
             />
           )}
@@ -69,7 +69,7 @@ const Login = ({ setShowLogin }) => {
             onChange={onChangeHandler}
             value={data.email}
             type="email"
-            placeholder="Your email"
+            placeholder="Email..."
             required
           />
           <input
@@ -77,23 +77,23 @@ const Login = ({ setShowLogin }) => {
             onChange={onChangeHandler}
             value={data.password}
             type="password"
-            placeholder="Your password"
+            placeholder="Mật khẩu..."
             required
           />
         </div>
         <button type="submit">
-          {currState === "Sign Up" ? "Create Account" : "Login"}
+          {currState === "Sign Up" ? "Tạo tài khoản" : "Đăng nhập"}
         </button>
         <div className="login-popup-condition">
           <input type="checkbox" required />
-          <p>By continuing, I agree to the terms of use & privacy policy.</p>
+          <p>Bằng cách tiếp tục, tôi đồng ý với các điều khoản sử dụng và chính sách quyền riêng tư.</p>
         </div>
         <p>
           {currState === "Login"
-            ? "Create a new account? "
-            : "Already have an account? "}
+            ? "Tạo tài khoản mới? "
+            : "Bạn đã có tài khoản? "}
           <span onClick={() => setCurrState(currState === "Login" ? "Sign Up" : "Login")}>
-            {currState === "Login" ? "Sign Up" : "Login"} here
+            {currState === "Login" ? "Đăng kí" : "Đăng nhập"} 
           </span>
         </p>
       </form>
