@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import { assets } from "../../assets/assets";
 
@@ -45,7 +46,7 @@ const Footer = () => {
             Địa chỉ: 274, Lê Quang Định, Phường 11, Bình Thạnh, TP.HCM
           </p>
           <p>Giao hàng: Giao hàng miễn phí dưới 2km</p>
-          <div style={{ display: "flex", gap: "10px" ,margin:"10px 0px"}}>
+          <div style={{ display: "flex", gap: "10px", margin: "10px 0px" }}>
             <img src={assets.facebook_icon} alt="" style={{ width: "40px" }} />
             <img src={assets.twitter_icon} alt="" style={{ width: "40px" }} />
             <img src={assets.linkedin_icon} alt="" style={{ width: "40px" }} />

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext } from "react";
 import "./FoodItem.css";
 import { assets } from "../../assets/assets";
@@ -8,6 +9,7 @@ const formatPrice = (price) => {
   return price.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
 };
 
+// eslint-disable-next-line react/prop-types
 const FoodItem = ({ id, name, price, description, image }) => {
   const { cartItems, addToCart, removeFromCart, url } =
     useContext(StoreContext);
