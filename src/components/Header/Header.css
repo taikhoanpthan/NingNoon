@@ -52,4 +52,40 @@
   .header-contents button {
     padding: 2vw 4vw;
   }
+}
+@media (max-width: 500px) {
+  .header {
+    height: 50vw;
+    margin: 20px auto;
+    border-radius: 8px;
+  }
+  .header .header-contents {
+    max-width: 80%;
+    left: 4vw;
+    bottom: 8%;
+    gap: 2vw;
+  }
+  .header .header-contents button {
+    padding: 3vw 6vw;
+    font-size: max(3vw, 12px);
+  }
+  .header .content-right {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    height: 60vw;
+    margin: 15px auto;
+  }
+  .header .header-contents {
+    max-width: 90%;
+    left: 2vw;
+    bottom: 5%;
+    gap: 3vw;
+  }
+  .header .header-contents button {
+    padding: 4vw 8vw;
+    font-size: max(4vw, 11px);
+  }
 }/*# sourceMappingURL=Header.css.map */
